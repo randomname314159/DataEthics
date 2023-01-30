@@ -1,2 +1,2 @@
-# DataEthics
-It do be ethical
+# My website
+And html
