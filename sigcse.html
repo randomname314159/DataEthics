@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<title>AI Writing</title>
+	
+	<style type="text/css" media="screen">
+	
+		body {
+			line-height: 140%;
+			margin: auto;
+			width: 800px;
+		}
+		
+		.centered {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.dark-mode{
+			background-color:#000E2F;
+			color:#FFFFFF;
+			line-height: 140%;
+			margin: auto;
+			width: 800px;
+		
+	}
+		
+	</style>
+	</head>
+	<body class="dark-mode">
+    <script>
+      function draw()
+      {
+        const plot = document.getElementById("plot") ;
+        const ctx = plot.getContext("2d");  
+        ctx.fillRect(50, 50, 50, 50) ;
+      }
+    </script>
+    <p>Square<\p>
+    <canvas id="plot"></canvas>
+  </body>
