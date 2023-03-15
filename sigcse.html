@@ -27,6 +27,14 @@
 			width: 800px;
 		
 		}
+		canvas {
+			backgound-color:#FFFFFF;
+			width:40.0%;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 		
 		
 	</style>
@@ -35,10 +43,13 @@
       function draw()
       {
         const plot = document.getElementById("canvas") ;
-        const ctx = plot.getContext("2d");  
+        const ctx = plot.getContext("2d");
+	ctx.fillStyle="white"
+	ctx.fillStyle(1,1,400,400);
+	ctx.fillStyle="green";
         ctx.fillRect(50, 50, 50, 50) ;
       }
 </script>
 <body class="dark-mode" onload="draw();">
-    <canvas style="backgound-color:#FFFFFF position:fixed top:50% left:50% transform: translate(-50%, -50%)" id="canvas" width="400" height="400"></canvas>
+    <canvas id="canvas" width="400" height="400"></canvas>
 </body>
