@@ -30,15 +30,16 @@
 		
 	</style>
 	</head>
-	<body class="dark-mode">
-    <script>
+<script>
       function draw()
       {
         const plot = document.getElementById("plot") ;
         const ctx = plot.getContext("2d");  
         ctx.fillRect(50, 50, 50, 50) ;
       }
-    </script>
+ </script>
+<body class="dark-mode" onload="draw">
+	
     <p>Square<\p>
-    <canvas id="plot"></canvas>
-  </body>
+    <canvas id="plot" width="400" height="400"></canvas>
+    </body>
