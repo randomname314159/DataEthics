@@ -16,6 +16,10 @@
 			border-radius: 25px;
   			background: #73AD21;
   			padding: 5px;
+			animation-name: spiderman;
+			animation-duration:5s;
+			animation-iteration-count:infinite;
+			
 		}
 		.centered {
 			position: fixed;
@@ -31,7 +35,10 @@
 			width: 800px;
 		
 	}
-		
+		@keyframes spiderman{
+			0% {left:0px;rotate:0deg}
+			100% {left:100px;top:100px;rotate:180deg}
+		}
 	</style>
 	</head>
 	<body class="dark-mode">
