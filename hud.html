@@ -37,7 +37,7 @@
 		}
 		#b3{
 			background: #FFFF00;
-			animation-name: barry;
+			animation-name: testing;
 			animation-duration:5s;
 			animation-iteration-count: infinite;
 			animation-direction:alternate;
@@ -85,6 +85,10 @@
 			50% {left:500px;top:500px;transform:rotate(180deg)}
 			100% {left:0px;top:500px;transform:rotate(360deg)}
 		}
+		@keyfram testing{
+			0%{left:-200;}
+			100%{left:-200;}
+		}
 	</style>
 	</head>
 	<body class="dark-mode">
@@ -108,6 +112,6 @@
 	</script>
 	<button onclick="fuckyou()" >Toggle dark mode</button>
 	<button onclick="fuckyou2()" id=b2>Toggle light mode</button>
-	<button onclick="ping()" >Bee movie?</button>
-	<button onclick="ping2()" >Bee movie?</button>
+	<button onclick="ping()" id=b3>Bee movie?</button>
+	<button onclick="ping2()" id=b4>Bee movie?</button>
 	
