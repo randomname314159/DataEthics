@@ -34,7 +34,22 @@
 			animation-iteration-count:infinite;
 			animation-direction:alternate;
 			animation-timing-function:linear;
-			
+		}
+		#b3{
+			background: #FFFF00;
+			animation-name: barry;
+			animation-duration:5s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate;
+			animation-timing-function: linear;
+		}
+		#b4{
+			background: #00FFFF;
+			animation-name: bee;
+			animation-duration:5s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate;
+			animation-timing-function: linear;
 		}
 		.centered {
 			position: fixed;
@@ -51,7 +66,7 @@
 		
 	}
 		@keyframes spiderman{
-			0% {left:0px;transform:rotate(0deg)}
+			0% {left:0px;top:0px;transform:rotate(0deg)}
 			50% {left:500px;top:0px;transform:rotate(180deg)}
 			100% {left:500px;top:500px;transform:rotate(360deg)}
 		}
@@ -59,6 +74,16 @@
 			0% {left:500px;top:500px;transform:rotate(0deg)}
 			50% {left:0px;top:500px;transform:rotate(180deg)}
 			100% {left:0px;top:0px;transform:rotate(360deg)}
+		}
+		@keyframes barry{
+			0%{left:0px;top:500px;transform:rotate(0deg)}
+			50%{left:0px;top:0px;transform:rotate(180deg)}
+			100% {left:500px;top:0px;transform:rotate(360deg)}
+		}
+		@keyframes bee{
+			0% {left:500px;top:0px;transform:rotate(0deg)}
+			50% {left:500px;top:500px;transform:rotate(180deg)}
+			100% {left:0px;top:500px;transform:rotate(360deg)}
 		}
 	</style>
 	</head>
@@ -73,6 +98,16 @@
 		function fuckyou2(){
 			alert("Ah! The sun! Run away!");
 		}
+		function ping(){
+			alert("According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.");
+		}
+		function ping2(){
+			alert("Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second. Hello? Barry?");
+		}
+		
 	</script>
 	<button onclick="fuckyou()" id=b1>Toggle dark mode</button>
 	<button onclick="fuckyou2()" id=b2>Toggle light mode</button>
+	<button onclick="ping()" id=b3>Bee movie?</button>
+	<button onclick="ping2()" id=b4>Bee movie?</button>
+	
