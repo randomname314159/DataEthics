@@ -50,10 +50,10 @@
 		}
 		#b5{
 			background: #C679FC;
-			animation-name: testing;
-			animation-duration:5s;
-			animation-direction:alternate;
-			animation-timing-function: ease;
+			animation-name: benson;
+			animation-duration:2s;
+			animation-direction:normal;
+			animation-timing-function: linear;
 		}
 		.centered {
 			position: fixed;
@@ -90,7 +90,9 @@
 			100% {left:-310px;top:500px;transform:rotate(360deg)}
 		}
 		@keyframes benson{
-			
+			0% {left:-180px;top:225px;transform:rotate(0deg)}
+			50% {left:-180px;top:225px;transform:rotate(360deg)}
+			100%{left:-180px;top:225px;transform:rotate(720deg)}
 		}
 		@keyframes testing{
 			0%{left:-405px;}
