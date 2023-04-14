@@ -16,13 +16,13 @@
 			border-radius: 25px;
 			padding: 5px;
 			position:relative;
+			animation-iteration-count: infinite;
 			
 		}
 		#b1{
   			background: #73AD21;
 			animation-name: spiderman;
 			animation-duration:5s;
-			animation-iteration-count:infinite;
 			animation-direction:alternate;
 			animation-timing-function:linear;
 			
@@ -31,7 +31,6 @@
   			background: #FF69B4;
 			animation-name: batman;
 			animation-duration:5s;
-			animation-iteration-count:infinite;
 			animation-direction:alternate;
 			animation-timing-function:linear;
 		}
@@ -39,7 +38,6 @@
 			background: #FFFF00;
 			animation-name: barry;
 			animation-duration:5s;
-			animation-iteration-count: infinite;
 			animation-direction:alternate;
 			animation-timing-function: linear;
 		}
@@ -47,9 +45,15 @@
 			background: #00FFFF;
 			animation-name: bee;
 			animation-duration:5s;
-			animation-iteration-count: infinite;
 			animation-direction:alternate;
 			animation-timing-function: linear;
+		}
+		#b5{
+			background: #C679FC;
+			animation-name: testing;
+			animation-duration:5s;
+			animation-direction:alternate;
+			animation-timing-function: ease;
 		}
 		.centered {
 			position: fixed;
@@ -85,6 +89,9 @@
 			50% {left:190px;top:500px;transform:rotate(180deg)}
 			100% {left:-310px;top:500px;transform:rotate(360deg)}
 		}
+		@keyframes benson{
+			
+		}
 		@keyframes testing{
 			0%{left:-310px;}
 			100%{left:-310px;}
@@ -108,10 +115,14 @@
 		function ping2(){
 			alert("Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second. Hello? Barry?");
 		}
+		function ping3(){
+			alert("Bingus!");
+		}
 		
 	</script>
 	<button onclick="fuckyou()" >Toggle dark mode</button>
 	<button onclick="fuckyou2()" id=b2>Toggle light mode</button>
 	<button onclick="ping()" id=b3>Bee movie?</button>
 	<button onclick="ping2()" id=b4>Bee movie?</button>
+	<button onclick="ping3()" id=b5>What are you?</button>
 	
